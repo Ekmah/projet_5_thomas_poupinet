@@ -12,8 +12,8 @@ function makeRequest() {
             price = thing.price/100
             let content = document.getElementById("mainContent")
             content.innerHTML +="\
-            <div style='margin:10px;'>\
-                <div class='card' style='width:350px;'>\
+            <div class='col-sm-5'>\
+                <div class='card' style='margin:25px;'>\
                     <img src='"+thing.imageUrl+"' class='card-img-top' alt='...' style='height:150px;object-fit: cover;'> \
                     <div class='card-body'> \
                         <h5 class='card-title'>"+thing.name+"</h5>\
