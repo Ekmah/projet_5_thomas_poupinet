@@ -9,14 +9,18 @@ function makeRequest() {
         console.log(value);
         for (thing of value) {
             console.log(thing);
+            price = thing.price/100
             let content = document.getElementById("mainContent")
             content.innerHTML +="\
-            <div class='card' style='width: 18rem;'>\
-                <img src='"+thing.imageUrl+"' class='card-img-top' alt='...'> \
-                <div class='card-body'> \
-                    <h5 class='card-title'>"+thing.name+"</h5>\
-                    <p class='card-text'>"+thing.description+"</p>\
-                    <a href='#' class='btn btn-primary'>Go somewhere</a>\
+            <div style='margin:10px;'>\
+                <div class='card' style='width:350px;'>\
+                    <img src='"+thing.imageUrl+"' class='card-img-top' alt='...' style='height:150px;object-fit: cover;'> \
+                    <div class='card-body'> \
+                        <h5 class='card-title'>"+thing.name+"</h5>\
+                        <p class='card-text'>"+thing.description+"</p>\
+                        <p class='card-text'> Prix: "+price+"€</p>\
+                        <a href='#' class='btn btn-success'>Ajouter dans le panier</a>\
+                    </div>\
                 </div>\
             </div>"
         }
