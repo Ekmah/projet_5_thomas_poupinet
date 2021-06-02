@@ -15,7 +15,7 @@ fetch(`http://localhost:3000/api/furniture/${id}`)
     content.innerHTML +=`
     <div class='col-sm-${widthproduct}'>
         <div class='card' style='margin:25px;'>
-            <img src='${thing.imageUrl}' class='card-img-top' alt='...' style='height:150px;object-fit: cover;'> 
+            <img src='${thing.imageUrl}' class='card-img-top' alt='...' style='height:350px;object-fit: cover;'> 
             <div class='card-body'> 
                 <h5 class='card-title'>${thing.name}</h5>
                 <p class='card-text'>${thing.description}</p>
