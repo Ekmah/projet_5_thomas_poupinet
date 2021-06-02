@@ -22,7 +22,7 @@ fetch(`http://localhost:3000/api/furniture/${id}`)
                 <select class="form-select" aria-label="Default select example">
                 </select>
                 <p class='card-text'> Prix: ${price}€</p>
-                <a href='panier.html}' class='btn btn-success'>Ajouter au panier</a>
+                <a href='panier.html' class='btn btn-success'>Ajouter au panier</a>
             </div>
         </div>
     </div>`
