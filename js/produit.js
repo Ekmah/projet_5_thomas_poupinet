@@ -11,8 +11,9 @@ fetch(`http://localhost:3000/api/furniture/${id}`)
     console.log(thing);
     price = thing.price/100
     let content = document.getElementById("mainContent")
+    const widthproduct = 10
     content.innerHTML +=`
-    <div class='col-sm-10'>
+    <div class='col-sm-${widthproduct}'>
         <div class='card' style='margin:25px;'>
             <img src='${thing.imageUrl}' class='card-img-top' alt='...' style='height:150px;object-fit: cover;'> 
             <div class='card-body'> 

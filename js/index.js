@@ -9,8 +9,9 @@ fetch('http://localhost:3000/api/furniture')
     for (thing of value) {
         price = thing.price/100
         let content = document.getElementById("mainContent")
+        const widthproduct = 5
         content.innerHTML +=`
-        <div class='col-sm-5'>
+        <div class='col-sm-${widthproduct}'>
             <div class='card' style='margin:25px;'>
                 <img src='${thing.imageUrl}' class='card-img-top' alt='...' style='height:150px;object-fit: cover;'> 
                 <div class='card-body'> 

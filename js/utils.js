@@ -1,3 +1,4 @@
+// ajout largeur variable
 const html_product_card = `
 <div class='col-sm-10'>
     <div class='card' style='margin:25px;'>
